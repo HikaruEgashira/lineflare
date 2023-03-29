@@ -1,5 +1,6 @@
 name = "lineflare"
 compatibility_date = "2023-01-01"
+account_id = "44e24c8ee261f0962fa7d1f3b72a6afc"
 
 [[ d1_databases ]]
 binding = "DB" # i.e. available in your Worker on env.DB
