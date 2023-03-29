@@ -1,18 +1,18 @@
-name = "chatgpt"
+name = "lineflare"
 compatibility_date = "2023-01-01"
 
 [[ d1_databases ]]
 binding = "DB" # i.e. available in your Worker on env.DB
-database_name = ""
-database_id = ""
+database_name = "lineflare-db"
+database_id = "a5a36e9b-98ca-42d5-97a2-7ab0f2ce5086"
 
 [[queues.producers]]
-queue = ""
+queue = "lineflare-queue"
 binding = "QUEUE"
 
 [[queues.consumers]]
-queue = ""
-max_batch_size = 1 # optional: defaults to 10
+queue = "lineflare-queue"
+max_batch_size = 10 # optional: defaults to 10
 max_batch_timeout = 1 # optional: defaults to 5 seconds
 
 [env.production]
